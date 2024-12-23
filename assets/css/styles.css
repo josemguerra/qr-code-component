@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --white: rgb(255, 255, 255);
+  --Slate-300: rgb(213, 225, 239);
+  --Slate-500: rgb(104, 119, 141);
+  --Slate-900: rgb(31, 49, 79);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", serif;
+  font-size: 15px;
+  background-color: var(--Slate-300);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--white);
+  width: 320px;
+  height: 499px;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.card__body {
+  text-align: center;
+  padding-inline: 16px;
+  margin-bottom: 40px;
+}
+
+.card__header {
+  color: var(--Slate-900);
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card__description {
+  color: var(--Slate-500);
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
